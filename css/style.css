@@ -1,0 +1,233 @@
+:root {
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #ffc107;
+    --secundario: #0097a7;
+    --gris: #757575;
+    --grisClaro: #dfe9f3;
+    font-family: 'Krub', sans-serif;
+}
+
+/* Globales */
+html {
+    box-sizing: border-box; /* Hack para que las cajas ocupan el espacio definido teniendo en cuenta los padding, margin, etc...*/
+    font-size: 62.5%; /* Lo usamos para igualar 1rem a 10px*/
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+h1 {
+    font-size: 3.8rem; /*38px*/
+}
+h2 {
+    font-size:2.8rem; /*28px*/
+    text-align: center;
+    text-transform: uppercase;
+}
+h3 {
+    font-size: 1.8rem; /*18px*/
+}
+
+body {
+    font-size: 1.6rem; 
+    background-image: linear-gradient(to top, var(--grisClaro) 0%, var(--blanco) 100%);
+}
+
+/*Cabecera*/
+.cabecera {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cabecera .logo {
+    width: 15rem;
+    height: 10rem;    
+}
+
+/*Navegación*/
+.navegacion {
+    background-color: var(--secundario);
+    font-weight: bold;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+}
+
+.navegacion li a {
+    display:block;
+    padding: 1rem;
+    text-decoration: none;
+    color: var(--blanco);
+}
+
+.navegacion li:hover {
+    background-color: var(--primario);
+}
+
+.navegacion-vertical {
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 20rem;
+    background-color: var(--primario);
+}
+
+.navegacion li:hover .navegacion-vertical {
+    display: block;
+    opacity: 70%;
+}
+
+.navegacion-vertical li a {
+    display: block;
+    color: var(--oscuro);
+    padding: 1rem;
+    text-decoration: none;
+}
+
+/*Main*/
+.contenido-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .contenido-principal {
+        display: grid;
+        grid-template-columns: 4fr 1fr;
+    }
+}
+
+/*Publicaciones*/
+
+.contenedor-publicaciones h3 {
+    color: var(--secundario);
+}
+
+.publicacion {
+    margin: 1rem;
+}
+
+.publicacion .autor {
+    text-align: right;
+    font-style: italic;
+}
+
+/*Aside*/
+.contenedor-aside {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor-aside h3 {
+    color: var(--secundario);
+}
+
+/*Footer*/
+.footer {
+    text-align: center;
+}
+
+/*Utilidades*/
+.sombra {
+    background-color: var(--blanco);
+    border-radius: 2rem;
+    box-shadow: 0px 5px 15px 0px rgba(112, 112, 112, 0.5);
+    padding: 2rem;
+    margin: 2rem 1rem;
+}
+
+.boton {
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 1rem;
+    border: none;
+}
+
+.boton:hover {
+    cursor: pointer;
+}
+
+.alinear-derecha {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+/*Formulario*/
+
+.formulario {
+    background-color: var(--gris);
+    width: min(60rem, 100%);
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.formulario fieldset {
+    border: none;
+}
+
+.formulario legend {
+    color: var(--primario);
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.inputs {
+    margin-bottom: 1rem;
+}
+
+.inputs label {
+    color: var(--blanco);
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block
+}
+
+.inputs input,
+textarea {
+    width: 100%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
+
+/*Página Área*/
+
+.area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/*Página Quiénes somos*/
+
+.superhero  {
+    width: 10rem;
+    height: 10rem;
+    margin: 2rem;
+}
+
+.contenedor-superhero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

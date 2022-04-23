@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quiénes somos</title>
+        <!-- Implementamos normalize para facilitar que se muestre igual en todos los navegadores-->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+        <!-- Añado la tipo Krub desde google fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header class="cabecera">
+            <img class="logo" src="/img/logo.jpg" alt="logo">
+            <h1>GymTeam</h1>
+        </header>
+
+        <nav>
+            <ul class="navegacion">
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="#">Noticias</a>
+                    <ul class="navegacion-vertical">
+                        <li><a href="quienessomos.html">Quiénes somos</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Publicaciones</a>
+                    <ul class="navegacion-vertical">
+                        <li><a href="areas.html">Areas</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Localización</a>
+                    <ul class="navegacion-vertical">
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </body>
+
+    <main>
+        <section class="contenedor-superhero sombra">
+            <div>
+                <img class="superhero" src="img/wonder.png" alt="Marta Aparicio">
+            </div>
+            <div>
+                <h3>Marta Aparicio</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+        </section>
+        <section class="contenedor-superhero sombra">
+            <div>
+                <img class="superhero" src="img/iron.webp" alt="Daniel Jiménez">
+            </div>
+            <div>
+                <h3>Daniel Jiménez</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+        </section>
+        <section class="contenedor-superhero sombra">
+            <div>
+                <img class="superhero" src="img/deadpool.png" alt="Jorge García">
+            </div>
+            <div>
+                <h3>Jorge García</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Site desarrollado por Marta Aparicio, Daniel Jiménez & Jorge García.</p>
+        <p>Todos los derechos reservados</p>
+    </footer>
+</html>
